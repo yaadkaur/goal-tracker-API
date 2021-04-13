@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="html">
+<head>
+  <style>
+    body {
+      background-color: lightblue;
+    }
+
+    input#btn_delete {
+      margin: 6px 16px;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    #goalList_div {
+      margin-top: 10px;
+      padding-left: 5px;
+      background-color: lavender;
+      width: 43%;
+      float: left;
+    }
+
+    #completedList_div {
+      margin-top: 10px;
+      padding-left: 5px;
+      width: 46%;
+      float: right;
+      background-color: lightsteelblue;
+    }
+  </style>
+  <title>Goals List</title>
+</head>
+
+<body>
+
+<h1>Goal Tracker</h1>
+<label>Enter the Goal:<input type="text" size="50" name="item" id="myGoal"/></label>
+<input type="button" name="add" id="btn" value="Add"/><br>
+
+<div id="goalList_div">
+  <h3>Goal List (Click on the list Once goal is complete)!!</h3>
+  <ul id="goalList">
+  </ul>
+</div>
+<div id="completedList_div">
+  <h3>Completed Goal List</h3>
+  <input id="clearBtn" type="button" name="clearCompletedGoals" value="Clear"/>
+  <ul id="completedList">
+  </ul>
+  <script src="list.js"></script>
+</div>
+</body>
+</html> 
